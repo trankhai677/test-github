@@ -11,9 +11,8 @@ fo.write(f"{Full_name} \n{Current_time}")
 fo.close()
 time.sleep(3)
 
-'''
-cmd=[r"cd /d D:\Python_Ex\Working_Files\Working_Files\test-github", "git add .", "git commit -am \"finish_commit\"",
-     "git remote add origin \"https://github.com/trankhai677/test-github.git\"","git push origin main"]
+
+cmd=[r"cd /d D:\Python_Ex\Working_Files\Working_Files\test-github", "git add .", "git commit -am \"finish_commit\"","git push origin main"]
 
 for i in cmd:
     print(i)
@@ -24,11 +23,11 @@ for i in cmd:
     print(f"out: {out.splitlines()}\n")
     print(f"err: {err.splitlines()}")
 
+
+
+
+
 '''
-
-
-
-
 sp1=subprocess.run(r"cd /d D:\Python_Ex\Working_Files\Working_Files\test-github", shell= True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines= True) 
 print(sp1.stderr)
 sp2=subprocess.run("git add .", shell= True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines= True) 
@@ -39,6 +38,7 @@ print(sp3.stderr)
 #print(sp4.stderr)
 sp5=subprocess.run("git push origin main", shell= True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines= True) 
 print(sp5.stderr)
+'''
 
 '''
 os.system("git add .")
