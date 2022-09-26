@@ -35,4 +35,4 @@ print(sp3.stderr)
 sp5=subprocess.run("git push origin main", shell= True, stdout=subprocess.PIPE,stdin=sp3.stdout, stderr=subprocess.PIPE, universal_newlines= True) 
 print(sp5.stderr)
 '''
-os.system("cd /d D:\\Python_Ex\\Working_Files\\Working_Files\\test-github \ngit add . \ngit commit -am \"Finish-commit\" \ngit push origin main ")
+os.system("git add . \n git commit -am \"Finish-commit\" \n git push origin main ")

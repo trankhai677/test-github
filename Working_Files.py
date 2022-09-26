@@ -9,6 +9,7 @@ Full_name=str(input("Enter Full_name: "))
 fo=open(f"{Full_name}.txt","w")
 fo.write(f"{Full_name} \n{Current_time}")
 fo.close()
+time.sleep(3)
 
 '''
 cmd=[r"cd /d D:\Python_Ex\Working_Files\Working_Files\test-github", "git add .", "git commit -am \"finish_commit\"",
@@ -35,4 +36,6 @@ print(sp3.stderr)
 sp5=subprocess.run("git push origin main", shell= True, stdout=subprocess.PIPE,stdin=sp3.stdout, stderr=subprocess.PIPE, universal_newlines= True) 
 print(sp5.stderr)
 '''
-os.system("git add . \n git commit -am \"Finish-commit\" \n git push origin main ")
+os.system("git add .")
+os.system("git commit -am \"finish-commit\" ")
+os.system("git push origin main") 
