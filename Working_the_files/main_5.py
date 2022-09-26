@@ -12,7 +12,7 @@ des="D:\\Python_Ex\\Working_the_files\\test-github\\"
 shutil.move(src,des)
 
 cmd=[r"cd /d D:\Python_Ex\Working_the_files\test-github", "git add .","git commit -am \"Finish_commit\"",
-    "git remote add origin \"https://github.com/trankhai677/test-github.git\" ","git push -u origin main"]
+    "git remote add origin \"https://github.com/trankhai677/test-github.git\" ","git push -u origin master"]
 for i in cmd:
     print(i)
     sp=subprocess.Popen(i, shell= True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
